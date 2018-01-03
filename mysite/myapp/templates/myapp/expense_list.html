@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="centerstage">
+    {% for expense in expense_list %}
+    {% if user.is_authenticated%}
+    {% if user.username == expense.username %}
+        <p>{{ expense.date|date:'d/m/Y' }}
+          :
+        <a href="{% url 'myapp:expense_detail' pk=expense.pk %}">  {{ expense.title|upper }} </a></p>
+        <hr>
+          {% endif %}
+          {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

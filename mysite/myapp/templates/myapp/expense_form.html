@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="heading1">
+    <h1> NEW EXPENSE</h1>
+
+    <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <small>(Enter your username to save the expense)</small>
+    <p></p>
+    <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+  </div>
+
+{% endblock %}

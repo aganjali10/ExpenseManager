@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+            {% if user.is_authenticated %}
+            <div class="list">
+            <ul>
+              <li>
+                <p class="one">TITLE</p>
+                <p class="two">{{ expense.title }}</p>
+              </li>
+              <li>
+                <p class="one">DATE</p>
+                <p class="two">{{ expense.date|date:"d/m/Y" }}</p>
+              </li>
+              <li>
+                <p class="one">TIME</p>
+                <p class="two">{{ expense.date|date:"g:i a" }}</p>
+              </li>
+              <li>
+                <p class="one">DESCRIPTION</p>
+              <p class="two">  {{ expense.description }}</p>
+              </li>
+              <li>
+                <p class="one">AMOUNT</p>
+                <p class="two">{{ expense.amount }}</p>
+              </li>
+            </ul>
+          </div>
+            {% endif %}
+{% endblock %}

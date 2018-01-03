@@ -1,0 +1,48 @@
+.mycontent{
+  padding-top: 10px;
+/* border: 10px solid red;*/
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #b7c9e5;
+  margin: 0;
+}
+
+
+#note {
+  position: absolute;
+  color: rgba(249,241,204,1);
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+  font-family: Arial;
+}
+
+.list {
+  margin-top: 3%;
+  margin-left: 10%;
+  background-color: #222;
+  border-color: #080808;
+  margin-right: 40%;
+  padding: 2%;
+  border-radius: 10px;
+  color: #b7c9e5;
+}
+
+
+.one {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-left: 5%;
+}
+
+.two {
+  font-size: 1.3em;
+  margin-left: 8%;
+}
