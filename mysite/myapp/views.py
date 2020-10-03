@@ -3,7 +3,7 @@ from .models import Expense
 from django.views.generic import CreateView,ListView,DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from myapp.forms import ExpenseForm
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 # Create your views here.
 
 class ExpenseListView(ListView):
