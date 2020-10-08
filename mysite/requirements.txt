@@ -1,0 +1,7 @@
+asgiref==3.2.10
+Django==1.11.17
+django-bootstrap3==14.1.0
+importlib-metadata==1.7.0
+pytz==2020.1
+sqlparse==0.3.1
+zipp==3.2.0
